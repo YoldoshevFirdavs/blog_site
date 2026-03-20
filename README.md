@@ -1,0 +1,1 @@
+This project built with Python django. In this website you can see articles 📄, you can comment on them 👍 and you can read news 📰 
