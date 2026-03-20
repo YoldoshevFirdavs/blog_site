@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{% block title %}Share {{ post.title }}{% endblock %}
+
+{% block content %}
+    <h1>Share this post: {{ post.title }}</h1>
+    <p>Published {{ post.publish }} by {{ post.author }}</p>
+    <p>{{ post.body|linebreaks }}</p>
+    <p>Here you can share this post with others.</p>
+{% endblock %}
+
