@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}{% endblock %}</title>
-        <link href="{% static 'css/blog.css' %}" rel="stylesheet">
-    </head>
-    <body>
-    <div style="display: flex; max-width: 1200px; margin: 0 auto; width: 100%; align-items: flex-start;">
-        <div id="content">
-            {% block content %}
-            {% endblock %}
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
 
-        <div id="sidebar">
-            <h2>IT-Yangiliklar</h2>
-            <p>Informatsion texnologiyaga oid yangiliklar</p>
-        </div>
-    </div>
+<div id="sidebar">
+    <h2>IT-Yangiliklar</h2>
+    <p>Informatsion texnologiyaga oid yangiliklar</p>
+</div>
+
 </body>
 </html>
