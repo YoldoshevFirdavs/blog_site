@@ -7,13 +7,16 @@
         <link href="{% static 'css/blog.css' %}" rel="stylesheet">
     </head>
     <body>
+    <div style="display: flex; max-width: 1200px; margin: 0 auto; width: 100%; align-items: flex-start;">
         <div id="content">
             {% block content %}
             {% endblock %}
         </div>
+
         <div id="sidebar">
             <h2>IT-Yangiliklar</h2>
             <p>Informatsion texnologiyaga oid yangiliklar</p>
         </div>
-    </body>
+    </div>
+</body>
 </html>
